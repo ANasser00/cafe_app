@@ -7,9 +7,9 @@ A beautiful and feature-rich coffee shop mobile application built with Flutter, 
 
 ## 📱 Screenshots
 
-| Home | Menu | Item Details | Onboarding | Promo | Subscribe View | Subscription Details | Subscription Payment |
-|-------------|------|--------------|--------------|--------------|----------------|----------------------|----------------------|
-| ![Home](https://via.placeholder.com/200x400/056780/FFFFFF?text=Home) | ![Menu](https://via.placeholder.com/200x400/056780/FFFFFF?text=Menu) | ![Item Details](https://via.placeholder.com/200x400/056780/FFFFFF?text=Item%20Details) | ![Onboarding](https://via.placeholder.com/200x400/056780/FFFFFF?text=Onboarding) | ![Promo](https://via.placeholder.com/200x400/056780/FFFFFF?text=Promo) | ![Subscribe View](https://via.placeholder.com/200x400/056780/FFFFFF?text=Subscribe) | ![Subscription Details](https://via.placeholder.com/200x400/056780/FFFFFF?text=Sub%20Details) | ![Subscription Payment](https://via.placeholder.com/200x400/056780/FFFFFF?text=Sub%20Payment) |
+| Home | Menu | Item Details | Onboarding 1 | Onboarding 2 | Promo | Subscribe View | Subscription Details | Subscription Payment |
+|-------------|------|--------------|--------------|--------------|--------------|----------------|----------------------|----------------------|
+| ![Home](https://github.com/ANasser00/cafe_app/blob/main/assets/screenshots/home_page.png) | ![Menu](https://github.com/ANasser00/cafe_app/blob/main/assets/screenshots/menu_page.png) | ![Item Details](https://github.com/ANasser00/cafe_app/blob/main/assets/screenshots/item_details_page.png) | ![Onboarding 1](https://github.com/ANasser00/cafe_app/blob/main/assets/screenshots/onboarding_1.png) | ![Onboarding 2](https://github.com/ANasser00/cafe_app/blob/main/assets/screenshots/onboarding_2.png) | ![Promo](https://github.com/ANasser00/cafe_app/blob/main/assets/screenshots/promo_page.png) | ![Subscribe View](https://github.com/ANasser00/cafe_app/blob/main/assets/screenshots/subscribe_view.png) | ![Subscription Details](https://github.com/ANasser00/cafe_app/blob/main/assets/screenshots/subscribe_detail_view.png) | ![Subscription Payment](https://github.com/ANasser00/cafe_app/blob/main/assets/screenshots/subscription_payment.png) |
 ## ✨ Features
 
 ### 🏠 Core Features
