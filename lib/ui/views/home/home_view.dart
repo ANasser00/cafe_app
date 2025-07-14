@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 import 'home_viewmodel.dart';
+import 'package:cafe_app/ui/widgets/cafe_card_widget.dart';
 
 class HomeView extends StackedView<HomeViewModel> {
   const HomeView({super.key});
@@ -191,20 +192,23 @@ class HomeView extends StackedView<HomeViewModel> {
               ),
             ),
             const SizedBox(height: 12),
-            // Dots
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: List.generate(viewModel.ads.length, (index) {
-                return Container(
-                  margin: const EdgeInsets.symmetric(horizontal: 4),
-                  width: 8,
-                  height: 8,
-                  decoration: BoxDecoration(
-                    color: index == viewModel.currentAdIndex ? const Color(0xff056780) : Colors.grey[300],
-                    shape: BoxShape.circle,
-                  ),
-                );
-              }),
+            // Dots (moved to left and color changed)
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16.0), // Align with content
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start, // Changed to start
+                children: List.generate(viewModel.ads.length, (index) {
+                  return Container(
+                    margin: const EdgeInsets.symmetric(horizontal: 4),
+                    width: 8,
+                    height: 8,
+                    decoration: BoxDecoration(
+                      color: index == viewModel.currentAdIndex ? const Color(0xFFFEEDCB) : Colors.grey[300], // Active dot color changed
+                      shape: BoxShape.circle,
+                    ),
+                  );
+                }),
+              ),
             ),
             const SizedBox(height: 24),
             // Nearby Section
@@ -229,79 +233,14 @@ class HomeView extends StackedView<HomeViewModel> {
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
                 children: viewModel.nearbyPlaces.map((place) {
-                  return Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(16),
-                      border: Border.all(color: Colors.grey.shade200),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black.withOpacity(0.05),
-                          blurRadius: 4,
-                          offset: const Offset(0, 2),
-                        ),
-                      ],
-                    ),
-                    child: Column(
-                      children: [
-                        Stack(
-                          children: [
-                            ClipRRect(
-                              borderRadius: const BorderRadius.vertical(top: Radius.circular(16)),
-                              child: Image.network(
-                                place['image']!,
-                                height: 100,
-                                width: double.infinity,
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                            Positioned(
-                              top: 8,
-                              right: 8,
-                              child: Container(
-                                padding: const EdgeInsets.all(4),
-                                decoration: const BoxDecoration(color: Colors.white, shape: BoxShape.circle),
-                                child: Container(
-                                  height: 8,
-                                  width: 8,
-                                  decoration: const BoxDecoration(
-                                    color: Colors.orange,
-                                    shape: BoxShape.circle,
-                                  ),
-                                ),
-                              ),
-                            )
-                          ],
-                        ),
-                        Expanded(
-                          child: Padding(
-                            padding: const EdgeInsets.all(8),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(place['name']!,
-                                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
-                                    overflow: TextOverflow.ellipsis),
-                                const SizedBox(height: 4),
-                                Text(place['location']!,
-                                    style: const TextStyle(fontSize: 11, color: Colors.grey),
-                                    overflow: TextOverflow.ellipsis),
-                                const SizedBox(height: 4),
-                                Text(
-                                  '${place['status']} • ${place['distance']}',
-                                  style: TextStyle(
-                                    fontSize: 11,
-                                    fontWeight: FontWeight.w500,
-                                    color: place['status'] == 'Open' ? Colors.green : Colors.grey,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        )
-                      ],
-                    ),
+                  return CafeCardWidget(
+                    name: place['name']!,
+                    location: place['location']!,
+                    status: place['status']!,
+                    distance: place['distance']!,
+                    imageUrl: place['image']!,
+                    isOpen: place['status'] == 'Open',
+                    rating: place['rating'] ?? 4.5, // Use rating from data or default to 4.5
                   );
                 }).toList(),
               ),
@@ -321,7 +260,7 @@ class HomeView extends StackedView<HomeViewModel> {
           Stack(
             alignment: Alignment.center,
             children: [
-              // Outer circle with minimal opacity
+              // Outer circle with minimal opacity (same size)
               Container(
                 height: 64,
                 width: 64,
@@ -332,8 +271,8 @@ class HomeView extends StackedView<HomeViewModel> {
               ),
               // Inner smaller circle with gradient
               Container(
-                height: 48,
-                width: 48,
+                height: 40, // Made smaller
+                width: 40, // Made smaller
                 decoration: const BoxDecoration(
                   shape: BoxShape.circle,
                   gradient: LinearGradient(
@@ -349,7 +288,7 @@ class HomeView extends StackedView<HomeViewModel> {
                     )
                   ],
                 ),
-                child: Center(child: Icon(icon, color: Colors.white, size: 20)),
+                child: Center(child: Icon(icon, color: Colors.white, size: 18)), // Icon size adjusted
               ),
             ],
           ),

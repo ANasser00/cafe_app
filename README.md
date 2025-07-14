@@ -1,10 +1,9 @@
 # ☕ OZ Coffee - Flutter Mobile App
 
-A beautiful and feature-rich coffee shop mobile application built with Flutter, featuring a modern UI, subscription management, cart functionality, and loyalty points system.
+A beautiful and feature-rich coffee shop mobile application built with Flutter, featuring a modern UI, subscription management, cart functionality, Menu and Item Details views, Membership System.
 
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
 
 ## 📱 Screenshots
 

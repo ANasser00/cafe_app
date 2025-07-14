@@ -11,41 +11,47 @@ class HomeViewModel extends BaseViewModel {
     {'id': '1', 'image': 'https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=400'},
     {'id': '2', 'image': 'https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&w=400'},
     {'id': '3', 'image': 'https://images.pexels.com/photos/2253643/pexels-photo-2253643.jpeg?auto=compress&cs=tinysrgb&w=400'},
+    {'id': '4', 'image': 'https://images.pexels.com/photos/103566/pexels-photo-103566.jpeg?auto=compress&cs=tinysrgb&w=400'}, // New image
+    {'id': '5', 'image': 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=400'}, // New image
   ];
-  final List<Map<String, String>> _nearbyPlaces = [
+  final List<Map<String, dynamic>> _nearbyPlaces = [
     {
       'name': 'Goodtime Cafe 28',
       'location': 'Jl. ZA Pagar Alam, No. 43',
       'status': 'Open',
       'distance': '2.10 km',
-      'image': 'https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=400'
+      'image': 'https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=400',
+      'rating': 4.8,
     },
     {
       'name': 'Arabica Cafe 123',
       'location': 'Jl. ZA Pagar Alam, Bandar Lamp...',
       'status': 'Close',
       'distance': '4.80 km',
-      'image': 'https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&w=400'
+      'image': 'https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&w=400',
+      'rating': 4.2,
     },
     {
       'name': 'Coffee Corner',
       'location': 'Jl. Sudirman, No. 15',
       'status': 'Open',
       'distance': '1.50 km',
-      'image': 'https://images.pexels.com/photos/2253643/pexels-photo-2253643.jpeg?auto=compress&cs=tinysrgb&w=400'
+      'image': 'https://images.pexels.com/photos/2253643/pexels-photo-2253643.jpeg?auto=compress&cs=tinysrgb&w=400',
+      'rating': 4.6,
     },
     {
       'name': 'Brew & Bean',
       'location': 'Jl. Ahmad Yani, No. 22',
       'status': 'Open',
       'distance': '3.20 km',
-      'image': 'https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&w=400'
+      'image': 'https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&w=400',
+      'rating': 4.4,
     },
   ];
 
   int get currentAdIndex => _currentAdIndex;
   List<Map<String, String>> get ads => _ads;
-  List<Map<String, String>> get nearbyPlaces => _nearbyPlaces;
+  List<Map<String, dynamic>> get nearbyPlaces => _nearbyPlaces;
 
   void setAdIndex(int index) {
     _currentAdIndex = index;

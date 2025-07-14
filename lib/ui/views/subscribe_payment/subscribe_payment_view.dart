@@ -29,7 +29,7 @@ class SubscribePaymentView extends StackedView<SubscribePaymentViewModel> {
           icon: const Icon(Icons.close, color: Color(0xFF056780)),
         ),
         title: const Text(
-          'Subscribe Payment',
+          'Subscription Payment',
           style: TextStyle(
             color: Color(0xFF056780),
             fontSize: 25,
