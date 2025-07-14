@@ -7,10 +7,9 @@ A beautiful and feature-rich coffee shop mobile application built with Flutter, 
 
 ## 📱 Screenshots
 
-| Home Screen | Menu | Item Details | Subscription |
-|-------------|------|--------------|--------------|
-| ![Home](https://via.placeholder.com/200x400/056780/FFFFFF?text=Home) | ![Menu](https://via.placeholder.com/200x400/056780/FFFFFF?text=Menu) | ![Details](https://via.placeholder.com/200x400/056780/FFFFFF?text=Details) | ![Subscribe](https://via.placeholder.com/200x400/056780/FFFFFF?text=Subscribe) |
-
+| Home | Menu | Item Details | Onboarding | Promo | Subscribe View | Subscription Details | Subscription Payment |
+|-------------|------|--------------|--------------|--------------|----------------|----------------------|----------------------|
+| ![Home](https://via.placeholder.com/200x400/056780/FFFFFF?text=Home) | ![Menu](https://via.placeholder.com/200x400/056780/FFFFFF?text=Menu) | ![Item Details](https://via.placeholder.com/200x400/056780/FFFFFF?text=Item%20Details) | ![Onboarding](https://via.placeholder.com/200x400/056780/FFFFFF?text=Onboarding) | ![Promo](https://via.placeholder.com/200x400/056780/FFFFFF?text=Promo) | ![Subscribe View](https://via.placeholder.com/200x400/056780/FFFFFF?text=Subscribe) | ![Subscription Details](https://via.placeholder.com/200x400/056780/FFFFFF?text=Sub%20Details) | ![Subscription Payment](https://via.placeholder.com/200x400/056780/FFFFFF?text=Sub%20Payment) |
 ## ✨ Features
 
 ### 🏠 Core Features
