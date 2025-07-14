@@ -201,6 +201,10 @@ Run tests with:
 flutter test
 \`\`\`
 
+\`\`\`bash
+flutter run
+\`\`\`
+
 ## 🚀 Building for Production
 
 ### Android
