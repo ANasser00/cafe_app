@@ -13,13 +13,13 @@ class StartupView extends StackedView<StartupViewModel> {
     Widget? child,
   ) {
     return Scaffold(
-      backgroundColor: Colors.white, // Add explicit background color
+      backgroundColor: Colors.white, 
       extendBodyBehindAppBar: true,
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            // Add fade-in animation for better UX
+          
             AnimatedOpacity(
               opacity: 1.0,
               duration: const Duration(milliseconds: 500),
@@ -58,12 +58,11 @@ class StartupView extends StackedView<StartupViewModel> {
   @override
   void onViewModelReady(StartupViewModel viewModel) {
     super.onViewModelReady(viewModel);
-    // Always call initialize - the ViewModel will handle duplicate calls
     WidgetsBinding.instance.addPostFrameCallback((_) {
       viewModel.initialize();
     });
   }
   
   @override
-  bool get disposeViewModel => true; // Ensure ViewModel is properly disposed
+  bool get disposeViewModel => true; 
 }

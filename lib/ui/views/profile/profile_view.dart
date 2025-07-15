@@ -69,7 +69,7 @@ class ProfileView extends StackedView<ProfileViewModel> {
                   _buildMenuItem(
                     Icons.card_membership_outlined,
                     'Membership',
-                    () => viewModel.navigateToMembership(), // Call viewmodel method
+                    () => viewModel.navigateToMembership(), 
                   ),
                   _buildMenuItem(
                     Icons.favorite_outline,
@@ -121,7 +121,7 @@ class ProfileView extends StackedView<ProfileViewModel> {
       child: ListTile(
         leading: Icon(
           icon,
-          color: isLogout ? Colors.red : const Color(0xFF056780), // Changed to primary color
+          color: isLogout ? Colors.red : const Color(0xFF056780), 
           size: 24,
         ),
         title: Text(
@@ -129,7 +129,7 @@ class ProfileView extends StackedView<ProfileViewModel> {
           style: TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.w500,
-            color: isLogout ? Colors.red : const Color(0xFF056780), // Changed to primary color
+            color: isLogout ? Colors.red : const Color(0xFF056780), 
           ),
         ),
         trailing: Icon(

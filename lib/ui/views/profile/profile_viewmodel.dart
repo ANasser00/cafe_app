@@ -7,6 +7,6 @@ class ProfileViewModel extends BaseViewModel {
   final _navigationService = locator<NavigationService>();
 
   void navigateToMembership() {
-    _navigationService.navigateToPointsHistoryView(); // Navigate to the first page of the membership flow
+    _navigationService.navigateToPointsHistoryView(); 
   }
 }

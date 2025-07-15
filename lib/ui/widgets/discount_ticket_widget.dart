@@ -41,7 +41,7 @@ class DiscountTicketWidget extends StatelessWidget {
         child: CustomPaint(
           painter: _TicketPainter(
             backgroundColor: backgroundColor,
-            perforationColor: Colors.grey[200]!, // Color for the "holes"
+            perforationColor: Colors.grey[200]!, 
           ),
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
@@ -93,7 +93,7 @@ class DiscountTicketWidget extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Text(
-                        value.split(' ')[0], // e.g., "100" from "100 Voucher"
+                        value.split(' ')[0], 
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -101,7 +101,7 @@ class DiscountTicketWidget extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        value.split(' ').length > 1 ? value.split(' ')[1] : '', // e.g., "Voucher"
+                        value.split(' ').length > 1 ? value.split(' ')[1] : '', 
                         style: TextStyle(
                           fontSize: 10,
                           color: textColor.withOpacity(0.7),

@@ -63,14 +63,13 @@ class CafeCardWidget extends StatelessWidget {
                     },
                   ),
                 ),
-                // Star rating badge in top-left corner (colors updated)
                 Positioned(
                   top: 8,
                   left: 8,
                   child: Container(
                     padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                     decoration: BoxDecoration(
-                      color: const Color(0xFFFEEDCB), // Fill color changed to FEEDCB
+                      color: const Color(0xFFFEEDCB), 
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Row(
@@ -78,14 +77,14 @@ class CafeCardWidget extends StatelessWidget {
                       children: [
                         const Icon(
                           Icons.star,
-                          color: Color(0xFF056780), // Star icon color changed for contrast
+                          color: Color(0xFF056780), 
                           size: 14,
                         ),
                         const SizedBox(width: 4),
                         Text(
                           rating.toString(),
                           style: const TextStyle(
-                            color: Color(0xFF056780), // Text color changed for contrast
+                            color: Color(0xFF056780), 
                             fontSize: 12,
                             fontWeight: FontWeight.w600,
                             fontFamily: 'Roboto',

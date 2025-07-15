@@ -242,7 +242,7 @@ class SubscribePaymentView extends StackedView<SubscribePaymentViewModel> {
                     ],
                   ),
                 ),
-                const SizedBox(height: 100), // Space for the bottom button
+                const SizedBox(height: 100), 
               ],
             ),
           ),

@@ -15,7 +15,6 @@ class SubscriptionDetailsView extends StackedView<SubscriptionDetailsViewModel> 
   ) {
     print('SubscriptionDetailsView: Received plan: $plan'); // Debug print
 
-    // Safe access to plan properties with fallbacks (similar to ItemDetailsView)
     final String planId = plan['id']?.toString() ?? '';
     final String title = plan['title']?.toString() ?? 'Unknown Plan';
     final String subtitle = plan['subtitle']?.toString() ?? '';
@@ -252,7 +251,6 @@ class SubscriptionDetailsView extends StackedView<SubscriptionDetailsViewModel> 
     );
   }
 
-  // Helper methods for safe parsing (same as ItemDetailsView)
   double _parsePrice(dynamic price) {
     if (price == null) return 0.0;
     if (price is double) return price;
@@ -269,7 +267,6 @@ class SubscriptionDetailsView extends StackedView<SubscriptionDetailsViewModel> 
     return 0;
   }
 
-  // Detail card widget (similar to ItemDetailsView)
   Widget _buildDetailCard(String title, String value, IconData icon) {
     return Container(
       padding: const EdgeInsets.all(16),

@@ -30,7 +30,6 @@ class SubscriptionDetailsViewModel extends BaseViewModel {
 
       print('SubscriptionDetailsViewModel: Navigating to payment with plan: $plan'); // Debug print
       
-      // Create a clean copy of the plan data (similar to MenuViewModel)
       final cleanPlan = {
         'id': plan['id']?.toString() ?? '',
         'title': plan['title']?.toString() ?? 'Unknown Plan',
@@ -78,7 +77,6 @@ class SubscriptionDetailsViewModel extends BaseViewModel {
 
       print('Subscribing to plan: $plan'); // Debug print
       
-      // Here you would typically call your subscription service
       // await _subscriptionService.subscribe(plan);
       
       // Simulate subscription process
@@ -91,7 +89,6 @@ class SubscriptionDetailsViewModel extends BaseViewModel {
         duration: const Duration(seconds: 2),
       );
       
-      // Navigate back or to success page
       goBack();
       
     } catch (e) {

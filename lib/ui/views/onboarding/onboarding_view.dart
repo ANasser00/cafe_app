@@ -33,7 +33,7 @@ Widget _buildWelcomeScreen(OnboardingViewModel viewModel) {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
 Padding(
-  padding: const EdgeInsets.only(top: 24.0), // Adjust this value to lower it more or less
+  padding: const EdgeInsets.only(top: 24.0), 
   child: Center(
     child: Row(
       mainAxisSize: MainAxisSize.min,
@@ -264,7 +264,7 @@ Center(
                     ),
                   ),
                   const Spacer(),
-                  const SizedBox(width: 48), // Balance the back button
+                  const SizedBox(width: 48), 
                 ],
               ),
               const SizedBox(height: 32),
@@ -366,7 +366,7 @@ Center(
                     ),
                   ),
                   const Spacer(),
-                  const SizedBox(width: 48), // Balance the back button
+                  const SizedBox(width: 48),
                 ],
               ),
               const SizedBox(height: 32),

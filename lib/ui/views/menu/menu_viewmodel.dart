@@ -95,12 +95,10 @@ class MenuViewModel extends ReactiveViewModel {
     rebuildUi();
   }
 
-// Replace your navigateToItemDetails method in MenuViewModel with this:
 
 void navigateToItemDetails(Map<String, dynamic> item) {
   print('MenuViewModel: Navigating with item: $item'); // Debug print
   
-  // Create a clean copy of the item to ensure all data is properly serialized
   final cleanItem = {
     'id': item['id']?.toString() ?? '',
     'name': item['name']?.toString() ?? 'Unknown Item',

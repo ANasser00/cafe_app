@@ -46,7 +46,7 @@ class CartViewModel extends ReactiveViewModel {
   }
 
   void checkout() {
-    // Implement checkout logic here
+    //  checkout logic 
     _snackbarService.showSnackbar(
       message: 'Checkout functionality coming soon!',
       duration: const Duration(seconds: 2),

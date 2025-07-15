@@ -6,11 +6,11 @@ import '../../../app/app.router.dart';
 class StartupViewModel extends BaseViewModel {
   final _navigationService = locator<NavigationService>();
   
-  static bool _hasInitialized = false; // Static to persist across widget rebuilds
+  static bool _hasInitialized = false; 
   
   StartupViewModel() {
     // Reset on web refresh
-    if (identical(0, 0.0)) { // Web check
+    if (identical(0, 0.0)) { 
       _hasInitialized = false;
     }
   }

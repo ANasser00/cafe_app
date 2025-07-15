@@ -83,8 +83,8 @@ class HomeView extends StackedView<HomeViewModel> {
                             shape: BoxShape.circle,
                             gradient: const LinearGradient(
                               colors: [
-                                Color(0xffCD7F32), // Bronze color
-                                Color(0xffB8860B), // Darker bronze
+                                Color(0xffCD7F32), 
+                                Color(0xffB8860B), 
                               ],
                               begin: Alignment.topLeft,
                               end: Alignment.bottomRight,
@@ -194,9 +194,9 @@ class HomeView extends StackedView<HomeViewModel> {
             const SizedBox(height: 12),
             // Dots (moved to left and color changed)
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0), // Align with content
+              padding: const EdgeInsets.symmetric(horizontal: 16.0), 
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.start, // Changed to start
+                mainAxisAlignment: MainAxisAlignment.start, 
                 children: List.generate(viewModel.ads.length, (index) {
                   return Container(
                     margin: const EdgeInsets.symmetric(horizontal: 4),
@@ -240,7 +240,7 @@ class HomeView extends StackedView<HomeViewModel> {
                     distance: place['distance']!,
                     imageUrl: place['image']!,
                     isOpen: place['status'] == 'Open',
-                    rating: place['rating'] ?? 4.5, // Use rating from data or default to 4.5
+                    rating: place['rating'] ?? 4.5, 
                   );
                 }).toList(),
               ),
@@ -260,7 +260,7 @@ class HomeView extends StackedView<HomeViewModel> {
           Stack(
             alignment: Alignment.center,
             children: [
-              // Outer circle with minimal opacity (same size)
+            
               Container(
                 height: 64,
                 width: 64,
@@ -269,10 +269,10 @@ class HomeView extends StackedView<HomeViewModel> {
                   color: const Color(0xff056780).withOpacity(0.1),
                 ),
               ),
-              // Inner smaller circle with gradient
+            
               Container(
-                height: 40, // Made smaller
-                width: 40, // Made smaller
+                height: 40, 
+                width: 40, 
                 decoration: const BoxDecoration(
                   shape: BoxShape.circle,
                   gradient: LinearGradient(
@@ -288,7 +288,7 @@ class HomeView extends StackedView<HomeViewModel> {
                     )
                   ],
                 ),
-                child: Center(child: Icon(icon, color: Colors.white, size: 18)), // Icon size adjusted
+                child: Center(child: Icon(icon, color: Colors.white, size: 18)), 
               ),
             ],
           ),

@@ -16,7 +16,7 @@ class CartService with ListenableServiceMixin {
   
   void addToCart(Map<String, dynamic> item) {
     try {
-      print('CartService: Adding item: $item'); // Debug print
+      print('CartService: Adding item: $item');
       
       final String itemId = item['id']?.toString() ?? '';
       if (itemId.isEmpty) {
